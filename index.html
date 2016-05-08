@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Krutz Inventory Management</title>
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	
+	<!-- js link you idiot -->
+
+
+</head>
+<body>
+	<nav class="top-navigation">
+		<div class="content">
+			<a href=""><img src="images/kc-icon.png" class="logo" alt="Krutz Corp"></a>
+			<section class="nav-right">
+				<div class="links">Daniel Krutz</div>
+			</section>
+			
+		</div>
+	</nav>
+	<div class="main-area">
+		<div class="button-container">
+			<button class="nav-button" id="left-button">Inventory</button>
+			<button class="nav-button" id="mid-button">Logs</button>
+			<button class="nav-button" id="right-button">Order</button>
+		</div>
+		<div class="content inventory-container clearfix hidden">
+			<div class="title" id="inv-title">Current Inventory</div>
+			<table id="inv-table">
+				<tr>
+					<th>ProdID</th>
+					<th>Quantity</th>
+					<th>Friendly Name</th>
+					<th>Sales Price</th>
+					<th>Cost</th>
+				</tr>
+				<tr>
+					<td>asdafsa</td>
+					<td contenteditable="true">10</td>
+					<td contenteditable="true">Random Item</td>
+					<td contenteditable="true">100.00</td>
+					<td contenteditable="true">58.43</td>
+				</tr>
+				<tr>
+					<td>asdafsa</td>
+					<td contenteditable="true">10</td>
+					<td contenteditable="true">Random Item</td>
+					<td contenteditable="true">100.00</td>
+					<td contenteditable="true">58.43</td>
+				</tr>
+				<tr>
+					<td>asdafsa</td>
+					<td contenteditable="true">10</td>
+					<td contenteditable="true">Random Item</td>
+					<td contenteditable="true">100.00</td>
+					<td contenteditable="true">58.43</td>
+				</tr>
+
+				<!--template row -->
+				<tr class="hidden" id="inv-template">
+					<td>Untitled</td>
+					<td contenteditable="true">0</td>
+					<td contenteditable="true">Untitled</td>
+					<td contenteditable="true">0.00</td>
+					<td contenteditable="true">0.00</td>
+				</tr>
+			</table>
+			<button id="submit-btn" class="s-button clearfix">Save Changes</button>
+		</div>
+		<div class="content log-container clearfix">
+			<div class="title" id="log-title">Current Logs</div>
+			<table id="log-table">
+				<tr>
+					<th>Change Num</th>
+					<th>Transaction ID</th>
+					<th>Description</th>
+					<th>Timestamp</th>
+					<th>Product</th>
+					<th>Amount Changed</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>13663</td>
+					<td>Parts taken for manufacturing</td>
+					<td>12/12/15 12:12:12</td>
+					<td>asdfas</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>13663</td>
+					<td>Parts taken for manufacturing</td>
+					<td>12/12/15 12:12:12</td>
+					<td>asdfas</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>13663</td>
+					<td>Parts taken for manufacturing</td>
+					<td>12/12/15 12:12:12</td>
+					<td>asdfas</td>
+					<td>5</td>
+				</tr>
+
+				<!--template row -->
+				<tr class="hidden" id="log-template">
+					<td>0</td>
+					<td>0</td>
+					<td>Description</td>
+					<td>00/00/00 00:00:00</td>
+					<td>Product</td>
+					<td>0</td>
+				</tr>
+			</table>
+		</div>
+		<div class="content order-container">
+		</div>
+	</div>
+	<footer>
+		<section class="content">
+			<hr  width="1000px"/>
+		</section>
+	</footer>
+</body>
+</html>

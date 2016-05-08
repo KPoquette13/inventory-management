@@ -1,0 +1,153 @@
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+html {
+  font-family:'Calibri';
+}
+
+nav {
+  max-height: 4.375rem;
+  margin-right:auto;
+  margin-left:auto;
+  padding-top:.7em;
+  padding-bottom:.5em;
+}
+
+.top-navigation {
+  background-color:#EFEFEF;
+  width:100%;
+  border-bottom:1px solid #DDD;
+}
+
+.top-navigation > .content {
+  height:3.5rem;
+}
+
+.content {
+  padding: 0px 15px;
+  letter-spacing: .03em;
+  margin:0 auto;
+  width:70%;
+  min-width:37.5rem;
+}
+
+.logo{
+  height:3.2em;
+  width:2.4em;
+  float:left;
+}
+
+.top-navigation .links{
+  float:right;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: .95rem;
+  color:#7F848D;
+  list-style:none;
+  margin-top: 1.1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links:hover {
+  cursor: pointer;
+  color:#333333;
+}
+
+.outline {
+  border:1px solid #000;
+}
+
+.main-area{
+  padding-top:2em;
+  padding-bottom:1em;
+}
+
+.button-container{
+  width:15em;
+  height:2em;
+  margin:0 auto;
+}
+
+.inventory-container {
+  max-width:1000px;
+}
+
+.nav-button {
+  float:left;
+  height:2em;
+  width:6em;
+  background:#D9DBF9;
+  border:none;
+}
+
+.nav-button:hover {
+  background:#C8C7F5;
+  cursor:pointer;
+}
+
+#left-button {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#right-button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#mid-button {
+  border-left:1px solid #BEBDE8;
+  border-right:1px solid #BEBDE8;
+}
+
+.title {
+  width:7.8em;
+  margin:0 auto;
+  font-size:1.5em;
+  font-weight:bold;
+  padding:1em 0;
+}
+
+.grid {
+  width:1000px;
+  margin:0 auto;
+  height:50px;
+}
+
+td, th {
+  border-bottom:1px solid black;
+  text-align:left;
+}
+
+th {
+  background:#EFEFEF;
+  font-weight:bold;
+  height:1.5em;
+  padding-top:.2em;
+}
+
+#inv-table, #log-table {
+  table-layout:fixed;
+  width:1000px;
+  margin:0 auto;
+}
+
+.hidden {
+  display:none;
+}
+
+.s-button {
+  border:none;
+  border-radius:5px;
+  background:#3FE93F;
+  height:2.5em;
+  margin-top:2em;
+  float:right;
+}
