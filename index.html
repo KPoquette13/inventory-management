@@ -28,7 +28,7 @@
 			<button class="nav-button" id="mid-button">Logs</button>
 			<button class="nav-button" id="right-button">Order</button>
 		</div>
-		<div class="content inventory-container clearfix hidden">
+		<div class="content inventory-container clearfix hidden container">
 			<div class="title" id="inv-title">Current Inventory</div>
 			<table id="inv-table">
 				<tr>
@@ -71,7 +71,7 @@
 			</table>
 			<button id="submit-btn" class="s-button clearfix">Save Changes</button>
 		</div>
-		<div class="content log-container clearfix">
+		<div class="content log-container clearfix hidden container">
 			<div class="title" id="log-title">Current Logs</div>
 			<table id="log-table">
 				<tr>
@@ -118,12 +118,15 @@
 				</tr>
 			</table>
 		</div>
-		<div class="content order-container">
+		<div class="content order-container clearfix container outline">
+			<div class="title" id="order-title">Order Inventory</div>
+
 		</div>
 	</div>
 	<footer>
 		<section class="content">
-			<hr  width="1000px"/>
+			<hr  width="800px"/>
+			<div class="copyright">© Krutz Corporation</div>
 		</section>
 	</footer>
 </body>

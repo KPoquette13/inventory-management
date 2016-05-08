@@ -69,6 +69,11 @@ nav {
   padding-bottom:1em;
 }
 
+.container {
+  min-width:950px;
+  min-height:800px;
+}
+
 .button-container{
   width:15em;
   height:2em;
@@ -92,6 +97,11 @@ nav {
   cursor:pointer;
 }
 
+.s-button:hover {
+  cursor:pointer;
+  background:#4FD34F;
+}
+
 #left-button {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -113,6 +123,10 @@ nav {
   font-size:1.5em;
   font-weight:bold;
   padding:1em 0;
+}
+
+#order-title {
+  width:7em;
 }
 
 .grid {
@@ -150,4 +164,10 @@ th {
   height:2.5em;
   margin-top:2em;
   float:right;
+}
+
+.copyright {
+  padding:1em 0;
+  margin:0 auto;
+  width:10em;
 }
