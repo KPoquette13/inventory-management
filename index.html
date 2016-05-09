@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	
-	<!-- js link you idiot -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js"></script>
 
 
 </head>
@@ -24,11 +24,11 @@
 	</nav>
 	<div class="main-area">
 		<div class="button-container">
-			<button class="nav-button" id="left-button">Inventory</button>
-			<button class="nav-button" id="mid-button">Logs</button>
-			<button class="nav-button" id="right-button">Order</button>
+			<button class="nav-button active-button" id="inv-button">Inventory</button>
+			<button class="nav-button" id="log-button">Logs</button>
+			<button class="nav-button" id="order-button">Order</button>
 		</div>
-		<div class="content inventory-container clearfix hidden container">
+		<div class="content clearfix container" id="inventory-container">
 			<div class="title" id="inv-title">Current Inventory</div>
 			<table id="inv-table">
 				<tr>
@@ -37,27 +37,6 @@
 					<th>Friendly Name</th>
 					<th>Sales Price</th>
 					<th>Cost</th>
-				</tr>
-				<tr>
-					<td>asdafsa</td>
-					<td contenteditable="true">10</td>
-					<td contenteditable="true">Random Item</td>
-					<td contenteditable="true">100.00</td>
-					<td contenteditable="true">58.43</td>
-				</tr>
-				<tr>
-					<td>asdafsa</td>
-					<td contenteditable="true">10</td>
-					<td contenteditable="true">Random Item</td>
-					<td contenteditable="true">100.00</td>
-					<td contenteditable="true">58.43</td>
-				</tr>
-				<tr>
-					<td>asdafsa</td>
-					<td contenteditable="true">10</td>
-					<td contenteditable="true">Random Item</td>
-					<td contenteditable="true">100.00</td>
-					<td contenteditable="true">58.43</td>
 				</tr>
 
 				<!--template row -->
@@ -71,7 +50,7 @@
 			</table>
 			<button id="submit-btn" class="s-button clearfix">Save Changes</button>
 		</div>
-		<div class="content log-container clearfix hidden container">
+		<div class="content clearfix hidden container" id="log-container">
 			<div class="title" id="log-title">Current Logs</div>
 			<table id="log-table">
 				<tr>
@@ -82,30 +61,7 @@
 					<th>Product</th>
 					<th>Amount Changed</th>
 				</tr>
-				<tr>
-					<td>1</td>
-					<td>13663</td>
-					<td>Parts taken for manufacturing</td>
-					<td>12/12/15 12:12:12</td>
-					<td>asdfas</td>
-					<td>5</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>13663</td>
-					<td>Parts taken for manufacturing</td>
-					<td>12/12/15 12:12:12</td>
-					<td>asdfas</td>
-					<td>5</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>13663</td>
-					<td>Parts taken for manufacturing</td>
-					<td>12/12/15 12:12:12</td>
-					<td>asdfas</td>
-					<td>5</td>
-				</tr>
+				
 
 				<!--template row -->
 				<tr class="hidden" id="log-template">
@@ -118,15 +74,29 @@
 				</tr>
 			</table>
 		</div>
-		<div class="content order-container clearfix container outline">
+		<div class="content clearfix container hidden" id="order-container">
 			<div class="title" id="order-title">Order Inventory</div>
-
+			<div class="order-area clearfix">
+				<form id="part-order">
+					Part to Order:
+					<select>
+						<option value="0">Part 0</option>
+						<option value="1">Part 1</option>
+						<option value="2">Part 2</option>
+						<option value="3">Part 3</option>
+						<option value="4">Part 4</option>
+					</select>
+					<br /><br />
+					Number of Parts: <input type="text" id="part-num" required ><br />
+					<button type="submit" id="order-submit">Submit</button>
+				</form>
+			</div>
 		</div>
 	</div>
 	<footer>
 		<section class="content">
 			<hr  width="800px"/>
-			<div class="copyright">© Krutz Corporation</div>
+			<div class="copyright">©Krutz Corporation</div>
 		</section>
 	</footer>
 </body>

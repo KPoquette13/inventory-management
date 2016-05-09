@@ -72,16 +72,13 @@ nav {
 .container {
   min-width:950px;
   min-height:800px;
+  max-width:1000px;
 }
 
 .button-container{
   width:15em;
   height:2em;
   margin:0 auto;
-}
-
-.inventory-container {
-  max-width:1000px;
 }
 
 .nav-button {
@@ -92,27 +89,27 @@ nav {
   border:none;
 }
 
-.nav-button:hover {
+.active-button, .nav-button:hover {
   background:#C8C7F5;
-  cursor:pointer;
 }
 
-.s-button:hover {
-  cursor:pointer;
+
+
+.s-button:hover  {
   background:#4FD34F;
 }
 
-#left-button {
+#inv-button {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-#right-button {
+#order-button {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-#mid-button {
+#log-button {
   border-left:1px solid #BEBDE8;
   border-right:1px solid #BEBDE8;
 }
@@ -157,7 +154,7 @@ th {
   display:none;
 }
 
-.s-button {
+#submit-btn {
   border:none;
   border-radius:5px;
   background:#3FE93F;
@@ -170,4 +167,34 @@ th {
   padding:1em 0;
   margin:0 auto;
   width:10em;
+  text-align:center;
+}
+
+.order-area {
+  background:#EFEFEF;
+  border-radius:10px;
+  min-width:400px;
+  max-width:800px;
+  width:34%;
+  margin:0 auto;
+}
+
+#order-submit {
+  margin-right:3em;
+  margin-top:.5em;
+  border:none;
+  border-radius:5px;
+  background:#3FE93F;
+  height:2.5em;
+  width:5em;
+  float:right;
+}
+
+#order-submit:hover {
+  background:#4FD34F;
+}
+
+#part-order {
+  width:100%;
+  margin:1em 0 3em 1.5em;
 }
