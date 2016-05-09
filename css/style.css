@@ -93,9 +93,16 @@ nav {
   background:#C8C7F5;
 }
 
+#submit-btn {
+  border:none;
+  border-radius:5px;
+  background:#48F048;
+  height:2.5em;
+  margin-top:2em;
+  float:right;
+}
 
-
-.s-button:hover  {
+#submit-btn:hover  {
   background:#4FD34F;
 }
 
@@ -154,15 +161,6 @@ th {
   display:none;
 }
 
-#submit-btn {
-  border:none;
-  border-radius:5px;
-  background:#3FE93F;
-  height:2.5em;
-  margin-top:2em;
-  float:right;
-}
-
 .copyright {
   padding:1em 0;
   margin:0 auto;
@@ -184,7 +182,7 @@ th {
   margin-top:.5em;
   border:none;
   border-radius:5px;
-  background:#3FE93F;
+  background:#48F048;
   height:2.5em;
   width:5em;
   float:right;
